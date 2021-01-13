@@ -29,9 +29,9 @@ public abstract class Car{
         return color;
     }
 
-    public void changeColor(String color){
-        this.color = color;
-    }
+//    public void changeColor(String color){
+//        this.color = color;
+//    }
 
     public String getMake() {
         return make;
@@ -41,27 +41,27 @@ public abstract class Car{
         return model;
     }
 
-//    public int getEnginePower() {
-//        return engine.getPower();
-//    }
-//
-//    public String getFuelType() {
-//        return engine.getFuelType();
-//    }
-//
-//    public int getTyresSize() {
-//        return tyres.getSize();
-//    }
-//
-//    public String getTyresBrand() {
-//        return tyres.getBrand();
-//    }
-//
-//    public String getTyresSeason() {
-//        return tyres.getSeason();
-//    }
-//
-//    public void changeTyres(Tyres tyres){
-//        this.tyres = tyres;
-//    }
+    public int getEnginePower() {
+        return engine.getPower();
+    }
+
+    public String getFuelType() {
+        return engine.getFuelType();
+    }
+
+    public int getTyresSize() {
+        return tyres.getSize();
+    }
+
+    public String getTyresBrand() {
+        return tyres.getBrand();
+    }
+
+    public String getTyresSeason() {
+        return tyres.getSeason();
+    }
+
+    public void changeTyres(Tyres tyres){
+        this.tyres = tyres;
+    }
 }

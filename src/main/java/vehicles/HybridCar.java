@@ -16,4 +16,8 @@ public class HybridCar extends Car {
         this.engine2 = engine2;
         this.carEngines = new ArrayList<Engine>();
     }
+
+    public int totalCarPower(){
+        return this.getEnginePower() + engine2.getPower();
+    }
 }
