@@ -22,29 +22,29 @@ public class Customer {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 
     public ArrayList<Car> getOwnedVehicles() {
         return ownedVehicles;
     }
 
-//    public void addCarToOwnedVehicles(Car car){
-//        this.ownedVehicles.add(car);
-//    }
+    public void addCarToOwnedVehicles(Car car){
+        this.ownedVehicles.add(car);
+    }
 
     public double getMoney() {
         return money;
     }
 
-//    public void removeMoneyFromWallet(Car car){
-//        this.money -= car.getPrice();
-//    }
+    public void removeMoneyFromWallet(Car car){
+        this.money -= car.getPrice();
+    }
 
-//    public String buyVehicle(Car car){
-//        addCarToOwnedVehicles(car);
-//        removeMoneyFromWallet(car);
-//        return "Congrats " + this.name + " on your new purchase!";
-//    }
+    public String buyVehicle(Car car){
+        addCarToOwnedVehicles(car);
+        removeMoneyFromWallet(car);
+        return "Congrats " + this.name + " on your new purchase!";
+    }
 }
