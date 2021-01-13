@@ -12,6 +12,7 @@ public class HybridCarTest {
     Engine engine;
     Engine engine2;
     Tyres tyres;
+    Tyres tyres2;
     HybridCar hybridCar;
 
 
@@ -20,6 +21,7 @@ public class HybridCarTest {
         engine = new Engine(1800, "Petrol");
         engine2 = new Engine(1000, "Electric");
         tyres = new Tyres(19, "Pirelli", "Summer");
+        tyres2 = new Tyres(21, "Pirelli", "Winter");
         hybridCar = new HybridCar(engine, tyres, 75.00, "Blue", "Vauxhall", "Astra", engine2);
     }
 
@@ -51,5 +53,13 @@ public class HybridCarTest {
     @Test
     public void canGetTyreBrand(){
         assertEquals("Pirelli", hybridCar.getTyresBrand());
+    }
+
+    @Test
+
+    public void canChangeTyres(){
+        assertEquals("Summer", hybridCar.getTyresSeason());
+        hybridCar.changeTyres(tyres2);
+        assertEquals("Winter", hybridCar.getTyresSeason());
     }
 }
